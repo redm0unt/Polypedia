@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Wiki</title>
+</head>
+<body>
+    <!-- Скрипт показа уведомеления -->
+    <script>
+        // JavaScript для показа алерта
+        function showAlert() {
+            alert("Эта функция еще в разработке!");
+        }
+    </script>
+
+    <header>
+        <h1>My Wiki</h1>
+    </header>
+    <!-- Панель навигации -->
+    <nav>
+        <ul>
+            <li><a onclick="showAlert()" href="#home">Home</a></li>
+            <li><a onclick="showAlert()" href="#history">History</a></li>
+            <li><a onclick="showAlert()" href="#science">Science</a></li>
+            <!-- Добавьте дополнительные разделы здесь -->
+        </ul>
+    </nav>
+    <!-- Поиск -->
+    <div class="search-container">
+        <section id="home">
+            <h2>Welcome to My Wiki</h2>
+            </section>
+        <input type="text" class="search-input" placeholder="Поиск...">
+        
+        <button onclick="showAlert()" class="search-button">Найти</button>
+    </div>
+
+    <main>
+        
+        <!-- Добавьте дополнительные разделы и статьи здесь -->
+    </main>
+    <table width="100%">
+        <tr>
+            <!-- Левая часть -->
+            <td width="50">
+                <div class="rounded-block">
+                    <h2>Заголовок блока</h2>
+                    
+                    <div class="rounded-block-flex-vertical">
+                        <div class="card-publication">
+                            <h3><button onclick="showAlert()" class="styled-button">Заглавная страница</button></h3>
+                        </div>
+                        <div class="card-publication">
+                            <h3><button onclick="showAlert()" class="styled-button">Архив</button></h3>
+                        </div>
+                        <div class="card-publication">
+                            <h3><button onclick="showAlert()"class="styled-button">Свежие правки</button></h3>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <!-- Центральная часть -->
+            <td width="300">
+                <div class="rounded-block">
+                    <div class="rounded-block-white">
+                        <h2>Разделы</h2>
+                        <div class="rounded-block-flex">
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                            <div class="card">
+                                <h3>Раздел 1</h3>
+                            </div>
+                        </div>
+                        <div class="rounded-block-flex">
+                            <div class="employee-photo">
+                                <!-- Фото -->
+                                <img src="1663579212_36_mykaleidoscope_ru_p_veselie_koshechki_krasivo_38.jpg" alt="Фото сотрудника">
+                            </div>
+                            <div>
+                                <h3>Название случайной статьи</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ullam error repudiandae sint, nulla voluptate cumque enim esse cum tenetur earum. Amet quisquam soluta placeat impedit laborum, cupiditate voluptatem tenetur?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <h2>Разделы</h2>
+                    <ul>
+                        <li>Элемент списка 1</li>
+                        <li>Элемент списка 2</li>
+                        <li>Элемент списка 3</li>
+                    </ul> -->
+                </div>
+            </td>
+            <td width="150" >
+                <div class="rounded-block">
+                    <div class="rounded-block-flex-vertical">
+                        <div class="card-publication">
+                            <h3>Раздел 1</h3>
+                        </div>
+                        <div class="card-publication">
+                            <h3>Раздел 1</h3>
+                        </div>
+                        <div class="card-publication">
+                            <h3>Раздел 1</h3>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Добавьте дополнительные строки и данные, если необходимо -->
+    </table>
+    
+    <footer>
+        <p>&copy; 2023 My Wiki. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
