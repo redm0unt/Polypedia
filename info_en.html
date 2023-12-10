@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poly Pedia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="./images/logo.png" alt="" class="logo" />
+        <div class="input-wrapper">
+          <button class="search-submit" aria-label="search">
+            <ion-icon
+              name="search-outline"
+              aria-hidden="true"
+              class="search-icon icon"
+            ></ion-icon>
+          </button>
+          <input
+            type="search"
+            name="search"
+            placeholder="Поиск"
+            class="search-field"
+          />
+        </div>
+        <div class="user_log">
+          <img
+            src="./images/0766d183119ff92920403eb7ae566a85.png"
+            alt="user-pp"
+          />
+          <p>Гость</p>
+          <ion-icon name="log-in-outline" class="log-icon icon"></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <section class="left">
+        <ul class="first-list">
+          <li>
+            <ion-icon name="home-outline"></ion-icon>
+            <p><a href="./index.html">Главная</a></p>
+          </li>
+          <li>
+            <ion-icon name="bookmark-outline"></ion-icon>
+            <p>Избранное</p>
+          </li>
+          <li id="randomArticle">
+            <ion-icon name="shuffle-outline"></ion-icon>
+            <p>Случайная статья</p>
+          </li>
+          <li>
+            <ion-icon name="newspaper-outline"></ion-icon>
+            <p>Новости</p>
+          </li>
+          <li>
+            <ion-icon name="archive-outline"></ion-icon>
+            <p>Архив</p>
+          </li>
+        </ul>
+        <ul class="second-list">
+          <li>
+            <ion-icon name="code-outline"></ion-icon>
+            <p>Нашли ошибку?</p>
+          </li>
+          <li>
+            <ion-icon name="call-outline"></ion-icon>
+            <p>Контакты</p>
+          </li>
+          <li>
+            <ion-icon name="globe-outline"></ion-icon>
+            <p>Соц. сети</p>
+          </li>
+        </ul>
+
+
+        <div class="bottom">
+            <select name="language-select" class="language-select" id="languageSelect">
+              <option value="ru"><a href="info.html">РУС</a></option>
+              <option value="en"><a href="info_en">ENG</a></option>
+            </select>
+            <div class="bottom-icons">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <ion-icon name="settings-outline"></ion-icon>
+              </div>
+          </div>
+          
+          <script>
+            $(document).ready(function () {
+              // Add change event listener to the language select element
+              $('#languageSelect').change(function () {
+                // Get the selected option value
+                var selectedValue = $(this).val();
+          
+                // Redirect to the corresponding page based on the selected language
+                if (selectedValue === 'en') {
+                  window.location.href = 'info.html';
+                } else if (selectedValue === 'ru') {
+                  window.location.href = 'info_en.html';
+                }
+                // Add more conditions if you have additional languages
+              });
+            });
+          </script>
+
+
+        </div>
+      </section>
+      <section class="main">
+        <div class="main_content_info" id="inputText">
+          <h1>History of Moscow Polytechnic University</h1>
+          <p>
+            The history of the University of Mechanical Engineering began with the establishment of the Komissar Technical School in 1865
+            Komissar Technical School. After the October Revolution,
+            1919, the school was transformed into the 1st Moscow
+            Moscow Mechanical and Electrical Technical College named after M. V. Lomonosov. M. V. Lomonosov
+            (Lomonosov Technical School), and in 1922 - into the Lomonosov Moscow Mechanical and Electrotechnical Institute.
+            Lomonosov Moscow Mechanical and Electrical Engineering Institute named after M. V. Lomonosov. M. V. Lomonosov
+            (Lomonosov Institute). The formation and development of the Institute
+            is inextricably linked with the name of I. V. Gribov, who worked at the Komissarovsky Technical School.
+            Komissarov Technical School since 1914 as a teacher of the following disciplines.
+            at first as a teacher of such disciplines as mechanical engineering and metal technology.
+            drafting and metal technology, and later - the disciplines of engines
+            internal combustion engines and automobile engineering. He created in the
+            Komissarovsky technical school a department of internal combustion engines and automobiles and with 19 19
+            combustion engines and automobiles at the Komissarov Technical School and headed this department from 1916. В
+            During the period of transformation of the Komissarovsky Technical School into the 1st Moscow Mechanical-Electrical Technical School.
+            1st Moscow Mechanical and Electrotechnical Technical School named after M. V. V. Kommissarovsky. M. V.
+            Lomonosov, then into the Moscow Practical Mechanical and Electrical Engineering Institute named after M. V. Lomonosov.
+            Lomonosov Moscow Mechanical and Electrical Engineering Institute. M. V. Lomonosov, and
+            later to the Lomonosov Moscow Mechanic-Electrotechnical Institute named after M. V. Lomonosov.
+            М. V. Lomonosov. The head of these educational institutions was I.V. Gribov.
+            Gribov. In this and many other ways
+          </p>
+          <h1>
+            Moscow State University of Environmental Engineering (MSUEE)
+          </h1>
+          <p>
+            By the order of the Ministry of Education and Science of Russia from 28.12.2011 № 2898 Moscow State Technical University "MAMI" (MSTU "MAMI") and Moscow State Technical University "MAMI
+            Moscow State Technical University "MAMI" (MSTU "MAMI") and
+            Moscow State University of Engineering Ecology (MSUEE)
+            were reorganized by joining MGUIE to MSTU "MAMI" as a structural subdivision.
+            as a structural subdivision. Moscow State University
+            Moscow State University of Engineering Ecology was founded in 1931 on the basis of the Mechanical Faculty of the Moscow Chemical and Technological University "MAMI" as a structural subdivision.
+            Faculty of the Moscow Institute of Chemical Technology named after D. I. Mendeleev as the Moscow Institute of Engineering Ecology.
+            Mendeleev Moscow Institute of Engineers of Chemical
+            Moscow Institute of Chemical Engineering Engineers, and for many years it has been the oldest and one of the leading universities in Russia.
+            For many years it was the oldest and one of the leading higher educational establishments in Russia, providing training of engineering and scientific personnel, conducting fundamental and applied research.
+            training of engineering and scientific personnel, carrying out fundamental and applied scientific
+            research that determines technical policy in the creation of
+            environmentally friendly production facilities in the chemical, petrochemical, microbiological and other industries,
+            micro-biological and other industries. In 1976
+            MIChM was awarded the Order of the Red Banner of Labor for the contribution of
+            The Institute's staff in training highly qualified engineering personnel and conducting scientific research for the chemical industry.
+            personnel and scientific research for the chemical complex
+            of the country. MSUIE became a recognized, international scientific community,
+            educational and scientific center. This allowed to establish direct contacts with the
+            United Nations Organization on the issues related to the chemical industry.
+
+
+
+          </p>
+          <h1>
+            Moscow State Open University named after V.S. Chernomyrdin.
+            Chernomyrdin
+          </h1>
+          <p>
+            Main article: Moscow State Open University
+            Moscow State Open University named after V. S. Chernomyrdin In April 2012, the united university
+            became known as the Federal State Budgetary Educational Institution of Higher Professional Education.
+            Federal State Budgetary Educational Institution of Higher Professional Education
+            "Moscow State Machine-Building University" (MAMI).
+            In accordance with the order of the Ministry of Education and Science
+            Russian Federation No. 1074 dated December 20, 2012, Moscow State Open University named after V.S. MAMI was renamed Moscow State Machine-Building University.
+            State Open University named after V. S. Chernomyrdin and the Moscow State Evening Metallurgical University (MAMI).
+            Moscow State Evening Metallurgical Institute
+            are reorganized by merging with the Moscow State Engineering University (MSEI) and the Moscow State Evening Metallurgical Institute.
+            Machine-Building University (MAMI). Moscow State
+            Moscow State Open University (MSOU) is the successor to the Moscow City People's Open University (MAMI).
+            Moscow State Open University (MSOU) is the successor of the Moscow City People's Open University of A. L. Shanyavsky and
+            begins its history in 1932, when on the basis of the Polytechnic
+            school by the order of the People's Commissariat of Heavy Industry of the USSR
+            on December 13, 1932 № 907, was created All-Union Correspondence Institute of Technical Education (VZITO).
+            All-Union Correspondence Institute of Technical Education (VZITO), which united ten regional correspondence universities in its
+            ten regional correspondence universities. In 1935 by the Order of the People's Commissariat of Heavy Industry.
+            People's Commissariat of Heavy Industry of the USSR from March 28, 1935 ¹ 26-76
+            March 28, 1935, No. 26-76, the All-Union Correspondence Institute of Te
+
+
+
+          </p>
+          <h1>Moscow State Evening Metallurgical Institute</h1>
+          <p>
+            Main article: Moscow State Evening
+            Moscow State Evening
+            Moscow State Evening Metallurgical Institute was organized on the basis of the Decree
+            of the Council of People's Commissars of the USSR of April 17, 1930, as the
+            Moscow State Evening Metallurgical Institute was organized on the basis of the Moscow Metallurgical Plant "Sickle and Hammer".
+            metallurgical plant "Sickle and Hammer". In 1937 the Institute, as well as
+            like other metallurgical universities, was transferred from the USSR People's Commissariat of Trade and Industry
+            USSR to the Main Directorate of Educational Institutions of the People's Commissariat of Iron and Steel.
+            People's Commissariat of Iron and Steel Industry. In 1939, the All-Union Committee on
+            In 1939, the All-Union Committee for Higher Education under the USSR Council of People's Commissariat for Iron and Steel approved the Charter of the university with a new name - Moscow Evening Metallurgy.
+            Moscow Evening Metallurgical Institute (MVMI).
+            The contingent of students in the pre-war and war years was small,
+            However, by 1946 the Institute had graduated 469 engineers with practical experience.
+            practical experience. In 1981, in the year of its 50th anniversary, the MIMI
+            for its merits in training highly qualified specialists for the national economy and development of scientific research.
+            national economy and the development of scientific research was awarded the Order of the Red Labor
+            Order of the Red Banner of Labor. In the 1990s the training of engineers in a number of new specialties was organized.
+            training of engineers in a number of new specialties and specializations, including the technology of artistic metalworking.
+            including the technology of artistic metal processing, ecology and resource saving.
+            and resource conservation In 1995, by the order of the State Council of the Russian Federation, the Institute was awarded the Order of the Red Banner of Labor.
+
+
+
+          </p>
+          <h1>Moscow State Industrial University (MSIU)</h1>
+          <p>
+            Main article: Moscow State Industrial University
+            Moscow State Industrial University In accordance with the order of the Ministry of Education and
+            Science of the Russian Federation on December 30, 2014, No. 1649, Moscow State Machine-Building University (MAMI) was added to the Moscow
+            Moscow State Machine-Building University (MAMI) was merged with Moscow State Industrial University.
+            Moscow State Industrial University (formerly Zavod-VTUZ) was merged with Moscow State Mechanical Engineering University (MAMI).
+            (formerly Zavod-VTUZ at ZIL). MGIU had a deep historical connection
+            with MAMI. The prologue of the establishment of the Plant-VTUZ at ZIL can be considered as follows
+            opening on February 1, 1931 of a branch of the evening automobile mechanics institute.
+            Institute, which received the short name "AMI-AMO". However,
+            the establishment of the plant-vet college at AMO was not approved by the Supreme Council of the USSR national economy.
+            of the USSR national economy. At the end of 1958, the "Law on Strengthening the School's Relationship with Life and Further Development" was adopted.
+            Strengthening the connection between school and life and further development of the system of
+            of national education in the USSR", and on December 30, 1959 on the basis of this law the USSR Council of Ministers adopted the Decree
+            based on this law, the USSR Council of Ministers adopted Decree No. 1425 "On the
+            on the organization of factories, industrial enterprises and workshops at higher educational institutions".
+            at higher educational institutions". The order of the Acting Minister of Higher and
+            Secondary Specialized Education of the RSFSR N. F. Krasnov dated February 8, 1960 No. 107 determined the date of opening of the plants-VTUZs.
+            1960 No. 107 determined the date of opening of the plants-VTUZ - March 1, 1960 and the date of the beginning of classes - March 1, 1960.
+            1960 and the date of the beginning of classes - September 1, 1960. By this
+            By this time, the Moscow Automobile Plant had the following branches of the M
+
+
+
+          </p>
+          <h1>
+            Ivan Fyodorov Moscow State University of Printing Press
+          </h1>
+          <p>
+            Main article: Moscow State University of Printing Press
+            The history of the university began in 1930: by the decree of the CEC of the Council of
+            People's Commissars of the USSR on the basis of the printing faculties of the Moscow and Leningrad Higher Art and Technical Colleges
+            Moscow and Leningrad Higher Art and Technical
+            The Moscow Polygraphic Institute was organized on the basis of the printing faculties of the Moscow and Leningrad Higher Art and Technical Institutes (VKhUTEIN).
+            The Moscow Polygraphic Institute was organized. It became the first educational institution training highly qualified personnel for printing enterprises and publishing houses.
+            The Moscow Polygraphic Institute was organized.
+            Initially, the Institute had three faculties:
+            Technological, Engineering-Economic and Publishing-Graphic
+            (with the profile "Graphics"). The Technological Faculty trained
+            engineers-technologists of letterpress printing, engineers-technologists of flat printing
+            engineers-technologists of letterpress printing, engineers-technologists of gravure printing, engineers-technologists of photographic technology, engineers-technologists of
+            photographic technology engineers, and material science engineers. В
+            Faculty of Engineering and Economics had two specialties:
+            Engineer-economist-planner and Engineer-economist-rationalizer.
+            The publishing faculty accepted five specialties: designer of
+            book designer, newspaper and magazine designer, poster and children's book designer, originalist of the book, originalist of the book.
+            book, originalist of book, originalist of poster and magazine. In 1939
+            the mechanical faculty was opened to train engineers in the specialty "Mechanical equipment of polygraphy".
+            specialty "Mechanical equipment of printing enterprises
+            enterprises"
+
+
+
+          </p>
+          <h1>Moscow Polytechnic University</h1>
+          <p>
+            At the end of 2015, the Academic Councils of I. Fedorov Moscow State University of Physics and Technology and MAMI declared
+            about the intention to merge into a large multidisciplinary polytechnic university.
+            HIGHER EDUCATION INSTITUTION. In 2016, by the decision of the Academic Council meeting, the Institute of Graphic Arts and Book Art was named after a famous graphic artist.
+            and Book Art was named after the famous master of portraiture,
+            woodcut and book graphics, art historian,
+            painter-monumentalist and teacher, who worked at IPI, Prof.
+            В. A. Favorsky. Since September 1, 2016, the University of Printing
+            became the Graduate School of Printing and Media Industry as part of the Moscow Polytechnic University.
+            Moscow Polytechnic University. In accordance with the order
+            of the Ministry of Education and Science of Russia dated March 21, 2016, the Moscow Polytechnic University was established in Moscow by reorganization into a form of the Moscow Polytechnic University.
+            Moscow Polytechnic University was established in Moscow by reorganization in the form of a merger of
+            University of Mechanical Engineering (MAMI) and Moscow State University of Printing Press named after M.V. Lomonosov.
+            Moscow State University of Printing Press named after I. Fedorov. I. Fedorov Moscow State Printing University (MSUP). Rector of Moscow
+            Moscow Polytechnic University was appointed Rector of Moscow Polytechnic University Andrei Nikolaenko (previously Rector of MAMI).
+            Rector of MAMI). About 2,000 professors teach classes at 52
+            departments of the university. There are more than 29,000 students studying at the university in various forms of education.
+            various forms of education. Non-resident students are provided with
+            places for accommodation in 10 well-equipped student hostels.
+            The university has a constantly updated technical base for classes: in the academic buildings of the university.
+            technical base: in the academic buildings of B. Semenovs str.
+
+
+
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+        - ionicon link
+      -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
