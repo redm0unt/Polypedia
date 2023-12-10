@@ -162,7 +162,7 @@ section.container {
 }
 
 section.main {
-    background-color: transparent;
+    background: radial-gradient(88.15% 121.32% at 2.69% 4.09%, #DEB367 0%, rgba(217, 217, 217, 0.00) 96.21%);
     width: 100vw;
     margin-left: 21.1%;
     z-index: 21;
