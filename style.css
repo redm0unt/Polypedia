@@ -225,7 +225,7 @@ section.main .head_container .header_container pre {
 }
 
 .main_content .category .categories1 .category1 img {
-    width: 6rem;
+    width: 4rem; /*размер картинок*/ 
 }
 
 .main_content .category .categories1 .category1 img:hover {
